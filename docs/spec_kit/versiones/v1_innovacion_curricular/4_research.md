@@ -301,6 +301,23 @@ documentos; no constituyen vacíos que deban resolverse aquí.
 | Verificación humana de la especificación | `9_checklist.md` |
 | Nombres concretos de variables de entorno y parámetros de ejecución | Documentos de configuración y ejecución, incluidos `7_quickstart.md` cuando corresponda |
 
+### Estado posterior de las decisiones aplazadas
+
+Para V1, las decisiones asignadas a otros documentos se resolvieron después de
+redactar este research:
+
+- `5_data_model.md` ya definió el modelo de datos.
+- `6_contracts.md` ya definió los contratos HTTP.
+- `7_quickstart.md` ya definió los parámetros de ejecución, incluidos
+  `MSSQL_SA_PASSWORD`, `ConnectionStrings__SqlServer`, `UrlApi`, la base
+  `innovacion_curricular` y los puertos de desarrollo.
+- `8_tasks.md` ya definió la secuencia detallada de implementación.
+- `9_checklist.md` corresponde a la compuerta de revisión humana y todavía está
+  pendiente de esa revisión.
+
+En este contexto, «aplazada» significa que Research delegó una decisión al
+documento correspondiente; no significa que siga actualmente sin resolver.
+
 ## 18. Aclaraciones pendientes
 
 No se detectaron aclaraciones técnicas pendientes para esta etapa. Los detalles
@@ -316,6 +333,8 @@ comunica por HTTP. Las pruebas de Servicio podrán sustituir la persistencia con
 repositorios falsos, y Docker Compose integrará los tres servicios sin
 adelantar valores de configuración no aprobados.
 
-El siguiente paso técnico depende de documentar el esquema oficial en
-`5_data_model.md` y los contratos en `6_contracts.md`. Solo después de aprobar
-esas decisiones se concretarán los modelos, las consultas y los clientes HTTP.
+Al redactarse este research, el paso técnico siguiente dependía de documentar
+el esquema oficial en `5_data_model.md` y los contratos en `6_contracts.md`.
+Esos documentos ya resolvieron esas decisiones para V1; los modelos, las
+consultas y los clientes HTTP podrán concretarse durante las fases de
+implementación correspondientes.

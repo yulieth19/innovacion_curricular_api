@@ -61,13 +61,13 @@ aprobado manualmente.
 **Criterio de salida:** `9_checklist.md` aprobado manualmente y sin puntos
 rojos. **`8_tasks.md` por sí solo no autoriza comenzar a programar.**
 
-**Estado:** pendiente. Se detectó un bloqueo: `1_constitution.md` todavía
-contiene el marcador sobre los nombres de variables de entorno, aunque
-`7_quickstart.md` ya define `MSSQL_SA_PASSWORD`,
-`ConnectionStrings__SqlServer` y `UrlApi`. La condición literal de esta fase
-exige que no queden marcadores. La aclaración al final del documento debe
-resolverse formalmente antes de declarar aprobada la compuerta; esta tarea no
-modifica la constitución.
+**Estado:** pendiente. La aclaración sobre los nombres de variables de entorno
+ya fue resuelta para V1 en `7_quickstart.md`, conforme al Artículo 7; la
+Constitución ya no contiene el marcador correspondiente. Fase 0 continúa
+pendiente únicamente porque todavía debe realizarse y aprobarse la revisión
+humana de `9_checklist.md`. Si durante esa revisión aparece otra aclaración
+real, debe resolverse antes de comenzar código. Esta fase no se considera
+completada hasta que la persona revisora registre su aprobación.
 
 ## 4. Fase 1 — Infraestructura base y repositorios
 
@@ -585,4 +585,6 @@ no se trabajará directamente en `main`.
 
 ## 19. Aclaraciones pendientes
 
-[NECESITA ACLARACIÓN: La condición de salida de Fase 0 exige que no queden marcadores `[NECESITA ACLARACIÓN: ...]`, pero `1_constitution.md` conserva el marcador sobre nombres de variables de entorno aunque `7_quickstart.md` ya los define. ¿Debe enmendarse formalmente la constitución para retirar el marcador, o se considera resuelto a pesar de que el marcador permanezca?]
+No se detectan aclaraciones pendientes sobre nombres de variables de entorno:
+la Constitución registra su resolución para V1 y `7_quickstart.md` documenta
+los nombres concretos acordados.

@@ -317,8 +317,10 @@ posteriormente en `8_tasks.md`.
 
 ## 13. Dependencias documentales
 
-Antes de implementar se completarán y aprobarán los documentos que definen las
-decisiones que este plan deja deliberadamente abiertas:
+Al redactar este plan, las decisiones siguientes se dejaron deliberadamente
+abiertas y se asignaron a los documentos enumerados. Esos documentos
+posteriores ya las desarrollaron para V1; su estado posterior se resume en la
+sección «Actualización de decisiones aplazadas».
 
 - `4_research.md`: decisiones técnicas y alternativas que deban investigarse.
 - `5_data_model.md`: esquema oficial, fuentes, columnas, tipos, claves y
@@ -346,9 +348,10 @@ suposición las decisiones que les corresponden.
 	como respuesta correcta.
 - **Alcance acotado:** la existencia de otras tablas no habilita recursos fuera
 	de los siete de V1 ni adelanta funcionalidades de V2, V3 o V4.
-- **Configuración:** nombres de variables, puertos y valores de ejecución
-	permanecen pendientes de los documentos asignados; no se incorporan
-	credenciales reales a archivos versionados.
+- **Configuración:** al redactarse este plan, los nombres de variables,
+  puertos y parámetros de ejecución se remitieron a los documentos asignados.
+  `7_quickstart.md` los definió posteriormente; no se incorporan credenciales
+  reales a archivos versionados.
 - **Cierre:** V1 requiere criterios de aceptación aprobados para API y
 	Frontend; ni la implementación parcial ni la existencia de la base completa
 	bastan para cerrar la versión.
@@ -373,6 +376,21 @@ suposición las decisiones que les corresponden.
 | No anticipar V2, V3 ni V4 | Se excluyen explícitamente sus tablas, seguridad, dashboard y demás capacidades. | CUMPLE |
 | Ejecución mediante Docker Compose | Se planifican los tres servicios: SQL Server, API y Frontend, sin inventar parámetros de entorno. | CUMPLE |
 | Proceso Git constitucional | Cada integrante trabaja en su propia rama; se usan commits pequeños y descriptivos; los cambios llegan a `main` mediante Pull Request y el tag `v1` se crea solo después de superar criterios y compuertas. | CUMPLE |
+
+## Actualización de decisiones aplazadas
+
+Esta nota registra decisiones que el plan dejó abiertas al redactarse y que
+posteriormente se detallaron en los documentos previstos. No modifica las
+decisiones técnicas originales de este plan ni anticipa V2, V3 o V4:
+
+- `5_data_model.md` definió el esquema, tipos, claves, restricciones y datos
+	oficiales de los siete recursos V1.
+- `6_contracts.md` definió las rutas, JSON, códigos HTTP y validaciones
+	contractuales de V1.
+- `7_quickstart.md` definió la configuración de ejecución de V1, los nombres
+	de variables, la base `innovacion_curricular` y los puertos de desarrollo.
+- `8_tasks.md` definió la secuencia detallada de implementación y sus
+	compuertas.
 
 ## 16. Aclaraciones pendientes
 
