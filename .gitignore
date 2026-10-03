@@ -1,0 +1,10 @@
+# Configuracion local; la plantilla sin secretos si se versiona.
+.env
+.env.*
+!.env.example
+
+# Salidas locales de .NET.
+bin/
+obj/
+*.user
+*.suo
