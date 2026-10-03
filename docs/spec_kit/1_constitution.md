@@ -163,5 +163,5 @@ formalmente antes de continuar.
 los contratos y detalles propios de cada entrega, dentro de estas reglas
 permanentes.*
 
-> [NECESITA ACLARACIÓN: los nombres concretos de las variables de entorno se
-> definirán en el plan y el quickstart; no fueron especificados en este paso.]
+> **Aclaración resuelta para V1:** los nombres concretos de configuración se
+> definieron posteriormente en `7_quickstart.md`, conforme al Artículo 7.
